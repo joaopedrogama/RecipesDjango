@@ -9,3 +9,9 @@ def home(request):
     return render(request, 'recipes/pages/home.html', context={
         'name': 'Gama'
     })
+
+
+def recipes(request, id):
+    return render(request, 'recipes/pages/recipe-view.html', context={
+        'name': 'Gama'
+    })
